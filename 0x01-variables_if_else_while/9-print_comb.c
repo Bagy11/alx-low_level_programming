@@ -9,21 +9,21 @@
  * Description: Writes 0-9 with comma and space
  *
  * Return: 0 for success
- */
+*/
 int main(void)
 {
-  int num = 48;
+	int num = 48;
 
-  while (num < 58)
-    {
-      putchar(num);
-      if (num < 57)
+	while (num < 58)
 	{
-	  putchar(',');
-	  putchar(' ');
+		putchar(num);
+		if (num < 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		num++;
 	}
-      num++;
-    }
-  putchar('\n');
-  return (0);
+	putchar('\n');
+	return (0);
 }
