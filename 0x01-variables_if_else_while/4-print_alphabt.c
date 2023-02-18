@@ -11,27 +11,27 @@
  * Can only use putchar
  *
  * Return: 0 for success
- */
+*/
 int main(void)
 {
-  char letter = 'a';
+	char letter = 'a';
 
-  while (letter <= 'z')
-    {
-      if (letter == 'q')
+	while (letter <= 'z')
 	{
-	  letter++;
+		if (letter == 'q')
+		{
+			letter++;
+		}
+		else if (letter == 'e')
+		{
+			letter++;
+		}
+		else
+		{
+			putchar(letter);
+			letter++;
+		}
 	}
-      else if (letter == 'e')
-	{
-	  letter++;
-	}
-      else
-	{
-	  putchar(letter);
-	  letter++;
-	}
-    }
-  putchar('\n');
-  return (0);
+	putchar('\n');
+	return (0);
 }
