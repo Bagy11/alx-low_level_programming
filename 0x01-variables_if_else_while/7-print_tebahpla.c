@@ -10,16 +10,16 @@
  * Can only use putchar
  *
  * Return: 0 for success
- */
+*/
 int main(void)
 {
-  char letter = 'z';
+	      char letter = 'z';
 
-  while (letter >= 'a')
-    {
-      putchar(letter);
-      letter--;
-    }
-  putchar('\n');
-  return (0);
+	      while (letter >= 'a')
+	{
+		            putchar(letter);
+		            letter--;
+	}
+	putchar('\n');
+	return (0);
 }
