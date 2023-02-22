@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * add - add two ints
  * @a: first int to add
@@ -9,5 +10,5 @@
 
 int add(int a, int b)
 {
-  return (a + b);
+	return (a + b);
 }
