@@ -5,26 +5,27 @@
  * print_number -prints an integer
  *@n : integer to be printed
  */
-void print_integer (int n)
+
+  void printnumber(int n)
 {
-  unsigned int n1;
 
-  if (n<0)
-    {
-      n1 = -n;
-      _putchar ('-');
-    }
-  else
-    {
-      n1 = n;
-    }
+   if (n < 0) {
+       putchar('-');
+       n = -n;
+   }
 
-  if (n1 / 10)
-    {
-      print_number (n1 / 10);
-    }
-  _putchar ((n1 % 10) + '0');
+   if (n == 0)
+      putchar('0');
 
+   if (n/10)
+      printnumber(n/10);
 
+   putchar(n%10 + '0');
+}
 
+int main(int argc, char** argv)
+{
+   int n = atoi(argv[1]);
+   printnumber(n);
+   printf("\n");
 }
