@@ -4,28 +4,23 @@
 /**
  * print_number -prints an integer
  *@n : integer to be printed
- */
+ *return; Nothing 
+*/
 
-  void printnumber(int n)
+void print_number(int n)
 {
+  unsigned int k = n;
 
-   if (n < 0) {
-       putchar('-');
-       n = -n;
-   }
-
-   if (n == 0)
-      putchar('0');
-
-   if (n/10)
-      printnumber(n/10);
-
-   putchar(n%10 + '0');
+  if (n < 0)
+    {
+      n *= -1;
+      k = n;
+      _putchar( '-');
+    }
+  k /= 10;
+  if (k != 0)
+    print_number(k);
+  _putchar((unsigned int) n % 10 + '0');
 }
-
-int main(int argc, char** argv)
-{
-   int n = atoi(argv[1]);
-   printnumber(n);
-   printf("\n");
-}
+ 
+    
