@@ -1,0 +1,1 @@
+this is a pointer and arrays and strings in C programming
