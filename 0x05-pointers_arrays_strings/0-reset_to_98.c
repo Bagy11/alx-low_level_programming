@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - set value of int to 98
- *@n : address of value of change
+ *@n: address of value of change
  *Description: Resets *n to 98
  *Return: nothing
  **/
