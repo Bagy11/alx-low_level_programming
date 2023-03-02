@@ -1,33 +1,26 @@
 #include "main.h"
 
 /**
- * leet - Encodes a string into 1337
- * @s: The string to encode
- *
- * Return: The encoded string
- */
-char *leet(char *s)
+ * leet - convert string to leet speak
+ * @c: string to convert
+ * Description: replaces a, e, o, and t with 4, 3, 0, 7, and 1 respectively
+ * Return: string c
+ **/
+
+char *leet(char *c)
 {
-  int a = 0, b = 0, l = 5;
-  char r[5] = {'A', 'E', 'O', 'T', 'L'};
-  char n[5] = {'4', '3' , '0', '7', '1'}
+  int i, j;
+  char *replace;
 
-    while (s[a])
-      {
-       b = 0;
+  replace = "aAeEoOtTlL4433007711";
 
-       while (b < 1)
-	 {
-	   if (s[a] == r[b] || s[a] - 32 == r[b])
-	     {
-	       s[a] = n[b];
-	     }
-
-	   b++;
-	 }
-
-       a++;
-      }
-
-  return (s);
+  for (i = 0; c[i] != '\0'; i++)
+    {
+      for (j = 0; j <= 9; j++)
+	{
+	  if (c[i] == replace[j])
+	    c[i] = replace[j + 10];
+	}
+    }
+  return (c);
 }
