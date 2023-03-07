@@ -23,3 +23,4 @@ if (*two == '\0')
 return (haystack);
 }
 return (NULL);
+}
