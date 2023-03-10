@@ -2,16 +2,15 @@
 #include <stdio.h>
 
 /**
- * main - print number of arguments entered
- * @argc: number of arguments
- * @argv: arguments entered
- * Description: print number of arguments
- * Return: return zero
- **/
-int main(int argc, char *argc[])
+ * main - Prints the number of args
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: Always zero
+ */
+int main(int argc, char *argv[])
 {
-printf("%d\n", argc -1);
-argc = argv;
-
+(void) argv;
+printf("%d\n", argc - 1);
 return (0);
 }
