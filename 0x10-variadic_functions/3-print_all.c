@@ -51,7 +51,7 @@ printf("\n");
  */
 void print_a_char(char *separator, va_list args)
 {
-  printf("%s%c", separator, va_arg(args, int));
+printf("%s%c", separator, va_arg(args, int));
 }
 
 /**
@@ -63,7 +63,7 @@ void print_a_char(char *separator, va_list args)
  */
 void print_a_integer(char *separator, va_list args)
 {
-  printf("%s%i", separator, va_arg(args, int));
+printf("%s%i", separator, va_arg(args, int));
 }
 
 /**
@@ -75,7 +75,7 @@ void print_a_integer(char *separator, va_list args)
  */
 void print_a_float(char *separator, va_list args)
 {
-  printf("%s%f", separator, va_arg(args, double));
+printf("%s%f", separator, va_arg(args, double));
 }
 
 /**
